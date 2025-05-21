@@ -11,7 +11,7 @@ Este projeto apresenta um modelo de classificação treinado para prever o resul
 
 A ordem dos atributos no vetor de entrada é a seguinte:
 
-[salário_anual, total_dividas, historico_pagamento (score), idade]
+[salário_anual, total_dividas, historico_pagamento (score), idade, credito_solicitado]
 
     salário_anual: Salário anual do solicitante em dólares.
 
@@ -21,11 +21,13 @@ A ordem dos atributos no vetor de entrada é a seguinte:
 
     idade: Idade do solicitante em anos.
 
+    credito_solicitado: Quantidade de crédito solicitada
+
 🎯 Exemplo de Previsão
 
 Um exemplo de entrada fornecida ao modelo e sua respectiva saída:
 
-    Entrada (X): [45000, 8000, 0.912, 32]
+    Entrada (X): [45000, 8000, 0.912, 32, 20300]
 
     Saída (y): [3] → Categoria Elegível
 
